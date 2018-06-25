@@ -20,3 +20,15 @@ Help me understand better the BDD process from a fresh project.
 * Cucumber JS
 * Apickli
 
+## Running the App
+1. `git clone` repository
+2. Open in Visual Studio Code
+3. Navigate to the Debug tab
+4. `Launch App`
+5. Navigate to `localhost:8084`
+
+### Running the Tests
+1. Launch the app as above
+2. In terminal, `cd` to `/tests`
+3. Enter `npm test`
+4. Tests should run

@@ -1,0 +1,14 @@
+{
+  "name": "simple-bdd-express-app",
+  "version": "0.0.1",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "debug": "node-inspector --web-port 5958 & nodemon -L --debug server.js"
+  },
+  "dependencies": {
+    "express": "4.15.2",
+    "body-parser": "1.17.1"
+  }
+}

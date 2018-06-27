@@ -14,4 +14,4 @@ app.get('/private/ping', (req, res) => {
 
 app.listen(port, () => {
     console.log(`simple bdd express app is listening on port:, ${port}`);
-  });
+});

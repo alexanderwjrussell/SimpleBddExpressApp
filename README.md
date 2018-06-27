@@ -32,3 +32,9 @@ Help me understand better the BDD process from a fresh project.
 2. In terminal, `cd` to `/tests`
 3. Enter `npm test`
 4. Tests should run
+
+### Running App in Docker
+1. Run script `./ci-build/start-dev.sh`
+
+### Running Tests in Docker
+1. Run script `./ci-build/test.sh`

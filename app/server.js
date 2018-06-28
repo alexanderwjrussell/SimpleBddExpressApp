@@ -12,6 +12,14 @@ app.get('/private/ping', (req, res) => {
   res.send('pong');
 });
 
+app.get('/health', (req, res) => {
+  const result = {
+    serviceName: 'simple-bdd-express-app',
+    isOkay: true
+  }
+  res.send(result);
+});
+
 app.listen(port, () => {
     console.log(`simple bdd express app is listening on port:, ${port}`);
 });

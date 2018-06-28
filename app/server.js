@@ -4,21 +4,12 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
 const port = 8084;
+const healthRoutes = require('./routes/healthRoutes');
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.get('/private/ping', (req, res) => {
-  res.send('pong');
-});
-
-app.get('/health', (req, res) => {
-  const result = {
-    serviceName: 'simple-bdd-express-app',
-    isOkay: true
-  }
-  res.send(result);
-});
+app.use(healthRoutes);
 
 app.listen(port, () => {
     console.log(`simple bdd express app is listening on port:, ${port}`);

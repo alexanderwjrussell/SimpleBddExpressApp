@@ -1,5 +1,5 @@
 Feature: 
-    As an Energy team member
+    As a developer
     I want to check the health of the service
 
 Scenario: Doing a healthcheck

@@ -1,5 +1,5 @@
 Feature:
-  As an Energy team member
+  As a developerr
   I want to verify that the service is reachable
 
   Scenario: Doing a ping

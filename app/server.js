@@ -2,9 +2,11 @@
 
 const express = require('express');
 const bodyParser = require('body-parser');
+
+const healthRoutes = require('./routes/healthRoutes');
+
 const app = express();
 const port = 8084;
-const healthRoutes = require('./routes/healthRoutes');
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
